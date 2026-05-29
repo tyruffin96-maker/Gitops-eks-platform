@@ -41,7 +41,7 @@ module "eks" {
   private_subnet_ids = module.vpc.private_subnet_ids
 
   kubernetes_version = "1.32"
-  node_instance_type = "t3.micro"
+  node_instance_type = "t3.small"
   desired_nodes      = 2
   min_nodes          = 1
   max_nodes          = 4
