@@ -5,6 +5,7 @@ metadata:
   labels:
     app: sample-app
 spec:
+  progressDeadlineSeconds: 900
   replicas: 2
   selector:
     matchLabels:
